@@ -23,8 +23,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @Configuration
 @EnableTransactionManagement
 @PropertySource({ "classpath:database.properties" })
-@ComponentScan({ "com.h2.demo" })
-@EnableJpaRepositories(basePackages = "com.h2.demo.repository")
+@ComponentScan({ "com.mysql.demo" })
+@EnableJpaRepositories(basePackages = "com.mysql.demo.repository")
 public class PersistenceJPAConfig {
 
     @Autowired
@@ -38,7 +38,7 @@ public class PersistenceJPAConfig {
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
         final LocalContainerEntityManagerFactoryBean entityManagerFactoryBean = new LocalContainerEntityManagerFactoryBean();
         entityManagerFactoryBean.setDataSource(dataSource());
-        entityManagerFactoryBean.setPackagesToScan(new String[] { "com.h2.demo.entity" });
+        entityManagerFactoryBean.setPackagesToScan(new String[] { "com.mysql.demo.entity" });
 
         final HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         entityManagerFactoryBean.setJpaVendorAdapter(vendorAdapter);
