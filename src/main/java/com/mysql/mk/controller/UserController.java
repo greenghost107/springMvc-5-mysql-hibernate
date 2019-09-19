@@ -1,15 +1,14 @@
-package com.mysql.demo.controller;
+package com.mysql.mk.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.mysql.demo.entity.User;
-import com.mysql.demo.repository.UserRepository;
+import com.mysql.mk.entity.User;
+import com.mysql.mk.repository.UserRepository;
 
 @Controller
 public class UserController {

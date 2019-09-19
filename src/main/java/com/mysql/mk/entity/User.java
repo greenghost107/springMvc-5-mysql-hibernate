@@ -1,4 +1,4 @@
-package com.mysql.demo.entity;
+package com.mysql.mk.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

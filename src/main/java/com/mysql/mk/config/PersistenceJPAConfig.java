@@ -1,4 +1,4 @@
-package com.mysql.demo.config;
+package com.mysql.mk.config;
 
 import java.util.Properties;
 

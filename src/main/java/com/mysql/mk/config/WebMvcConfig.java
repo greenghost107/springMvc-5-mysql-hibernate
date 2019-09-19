@@ -1,4 +1,4 @@
-package com.mysql.demo.config;
+package com.mysql.mk.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
